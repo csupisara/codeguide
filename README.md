@@ -86,8 +86,11 @@ As a rule of thumb, if you feel the need to comment on something inside a method
 If we use too much lines in a method, it will make it harder to figure out what this method does.
 
 There are many ways to reduce the length of a method body.
+
 1.Extract Method.
+
 Problem: The code can be grouped together.
+
 Solution: Move it to a separate new method (or function) and replace the old code with a call to the method.
 
 2.Replace Temp with Query 
@@ -118,6 +121,7 @@ double basePrice() {
 ```
 
 3.Introduce Parameter Object or Preserve Whole Object.
+
 Problem: Repeating parameters.
 ```
 sum(x : int, y : int)
@@ -132,6 +136,7 @@ divide(num : Number)
 ```
 
 4.Moving the entire method to a separate object by replace method with method Object.
+
 Problem: You have a long method in which the local variables are so mash up, so you cannot apply Extract Method.
 ```
 class Order {
@@ -146,6 +151,7 @@ class Order {
 }
 ```
 Solution: Transform the method into a separate class so that the local variables become fields of the class.
+
 Then you can split the method into several methods within the same class.
 ```
 class Order {
@@ -173,7 +179,9 @@ class PriceCalculator {
 ```
 
 5.Conditionals and loops Conditional operators and loops are a good clue that code can be moved to a separate method. 
+
 Problem: You have a complex conditional (`if-then`/`else` or `switch`).
+
 Solution: Decompose the complicated parts of the conditional into separate methods: the condition, `then` and `else`.
 
 ##Exercise
