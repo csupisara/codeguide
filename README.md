@@ -1,4 +1,4 @@
-#Don’t Repeat Yourself (DRY)
+# Don’t Repeat Yourself (DRY)
 DRY says that “Every piece of system knowledge should have one authoritative, unambiguous representation. Every piece of knowledge in the development of something should have a single representation”. 
 
 Its aren’t refer to just writing the same piece of logic twice in two different places, but it also refer to repetition in your processes – testing, debugging, database schemas, test plans, the build system, even documentation, etc. 
@@ -73,15 +73,15 @@ class Action {
 ``` 
 As you see from this, if we change the constants in Constant.java then the change will be propagated through the application. 
 
-##Exercise
+## Exercise
 I have an exercise for you to work on. https://github.com/csupisara/codeguide/blob/master/src/Mechanic.java
 
-##Reference:
+## Reference:
 https://dotnetcodr.com/2013/10/17/the-dont-repeat-yourself-dry-design-principle-in-net-part-1/
 http://www.artima.com/intv/dry2.html
 http://programmer.97things.oreilly.com/wiki/index.php/Don't_Repeat_Yourself
 
-#No Long Methods
+# No Long Methods
 As a rule of thumb, if you feel the need to comment on something inside a method, you should take this code and put it in a new method. 
 If we use too much lines in a method, it will make it harder to figure out what this method does.
 
@@ -184,9 +184,9 @@ Problem: You have a complex conditional (`if-then`/`else` or `switch`).
 
 Solution: Decompose the complicated parts of the conditional into separate methods: the condition, `then` and `else`.
 
-##Exercise
+## Exercise
 I have an exercise for you to work on. https://github.com/csupisara/codeguide/blob/master/src/Combination.java
 
-##Reference
+## Reference
 https://sourcemaking.com/refactoring/smells/long-method
 
